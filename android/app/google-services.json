@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "564628828414",
+    "project_id": "sanofinalproject",
+    "storage_bucket": "sanofinalproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564628828414:android:0637db39fce23fa7e635af",
+        "android_client_info": {
+          "package_name": "com.example.sano_final_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRfBurklgGsOzqnEPpmbLT6_oxdLIuaZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
