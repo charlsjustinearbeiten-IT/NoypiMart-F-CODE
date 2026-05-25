@@ -13,25 +13,8 @@ workflows:
       - name: Flutter pub get
         script: |
           flutter pub get
-      - name: Flutter iOS migration
+      - name: Build iOS Simulator
         script: |
-          flutter build ios --debug --no-codesign || true
-      - name: Force pod install
-        script: |
-          cd ios
-          pod deintegrate || true
-          pod install --repo-update
-          cd ..
-      - name: Build iOS with xcodebuild
-        script: |
-          xcodebuild \
-            -workspace ios/Runner.xcworkspace \
-            -scheme Runner \
-            -configuration Debug \
-            -destination generic/platform=iOS \
-            -allowProvisioningUpdates \
-            CODE_SIGNING_ALLOWED=NO \
-            build
+          flutter build ios --debug --no-codesign --simulator
     artifacts:
-      - build/ios/iphoneos/*.app
-      - /tmp/xcodebuild_logs/*.log
+      - build/ios/iphonesimulator/Runner.app
